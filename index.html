@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Redirect -->
-  <meta http-equiv="refresh"
-        content="0.2; url=https://choose.creditcard/signup?utm_source=sign.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection">
+  <title>Sign.Creditcard – Signatures, Authentication & Transaction Approval</title>
+  <meta name="description"
+        content="Sign.creditcard explains how signatures, authentication methods and transaction-approval flows work in modern card payments – from signatures and PIN to biometrics, tokens and SCA rules." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://sign.creditcard/" />
 
-  <!-- Canonical -->
-  <link rel="canonical"
-        href="https://choose.creditcard/signup?utm_source=sign.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sign.Creditcard – Signatures, Authentication & Approval" />
+  <meta property="og:description"
+        content="Learn how signatures, PIN, biometrics, device authentication and Strong Customer Authentication decide whether a card transaction is approved." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sign.creditcard/" />
+  <meta property="og:image" content="https://sign.creditcard/preview.png" />
 
-  <!-- SEO -->
-  <meta name="robots" content="noindex,follow">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
@@ -21,21 +27,262 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-64FE63JQ3H', {
-      'page_title': 'Redirect sign.creditcard',
-      'page_path': '/redirect/sign.creditcard'
-    });
+    gtag('config','G-64FE63JQ3H');
   </script>
-
-  <!-- Background -->
-  <style>
-    html,body {
-      background:#020617;
-      color:#020617;
-      margin:0;
-      height:100vh;
-    }
-  </style>
 </head>
-<body></body>
+
+<body class="bg-slate-950 text-slate-100">
+
+  <!-- HEADER – unified CC -->
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <span class="brand-title">Sign.creditcard</span>
+          <span class="brand-subtitle">Signatures · Authentication · Approval flows</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="https://fin.creditcard/">Collection</a>
+        <a href="https://tech.creditcard/">Tech</a>
+        <a href="https://choose.creditcard/">Choose</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cc-page">
+
+    <!-- Breadcrumb -->
+    <p class="cc-breadcrumb">Sign.creditcard · Signatures · Authentication · Approval</p>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>How Cards Are Authenticated &amp; Approved Today</h1>
+      <p class="hero-lead">
+        Sign.creditcard explains how signatures, PIN codes, biometrics and digital authentication determine
+        whether a transaction is approved — across physical cards, wallets and online payments.
+      </p>
+
+      <a class="cta"
+         href="https://choose.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=sign_top">
+        Compare Cards with Strong Authentication & Security
+      </a>
+    </section>
+
+    <!-- What is “signing” a transaction? -->
+    <section class="section">
+      <h2>What does it mean to “sign” a card transaction?</h2>
+      <p class="small">
+        Historically, signing a receipt was the core of cardholder authentication. Today, “signing” has expanded
+        into a much broader concept: proving that you are the rightful cardholder using one or more factors.
+      </p>
+      <ul class="list">
+        <li><strong>Signature</strong> – handwritten verification still used in some regions, mostly declining.</li>
+        <li><strong>PIN</strong> – numeric code known only to the cardholder; dominant in chip-and-PIN regions.</li>
+        <li><strong>Biometrics</strong> – fingerprint/FaceID used for mobile wallets and PSD2-compliant flows.</li>
+        <li><strong>Device authentication</strong> – secure elements &amp; tokenized card credentials.</li>
+        <li><strong>SCA logic</strong> – Strong Customer Authentication rules that require 2 factors.</li>
+      </ul>
+      <p class="small">
+        In practice, “signing” now means confirming a transaction with whatever method your device, issuer or
+        region requires.
+      </p>
+    </section>
+
+    <!-- How authentication flows work -->
+    <section class="section">
+      <h2>How authentication works for card payments</h2>
+      <p class="small">
+        Regardless of the method, most card authentication flows share the same building blocks:
+      </p>
+      <ul class="list">
+        <li><strong>1. Identify the card</strong> – via chip, magstripe, NFC token, or online credentials.</li>
+        <li><strong>2. Verify the cardholder</strong> – signature, PIN, biometrics or 3-D Secure challenge.</li>
+        <li><strong>3. Apply rules</strong> – exemptions, risk scoring, SCA exceptions, issuer logic.</li>
+        <li><strong>4. Approve or decline</strong> – issuer decides based on risk and authentication level.</li>
+      </ul>
+      <p class="small">
+        Issuers now combine risk models with SCA logic, meaning low-risk transactions often skip unnecessary
+        authentication, while higher-risk ones require stronger proof.
+      </p>
+    </section>
+
+    <!-- Types/models -->
+    <section class="section">
+      <h2>The main authentication &amp; signature models</h2>
+      <p class="small">Different card programs and regions use different default authentication types:</p>
+
+      <div class="cluster-grid">
+        <div class="cluster-card">
+          <h3>Signature-based transactions</h3>
+          <p class="small">
+            Mostly legacy; still exists in some regions and on some terminals. Low security; being phased out.
+          </p>
+        </div>
+
+        <div class="cluster-card">
+          <h3>Chip &amp; PIN</h3>
+          <p class="small">
+            The dominant method in Europe &amp; many global markets. Strong offline and online verification.
+          </p>
+        </div>
+
+        <div class="cluster-card">
+          <h3>Tap &amp; go (low-value)</h3>
+          <p class="small">
+            Contactless payments under a threshold often skip PIN; issuer risk rules apply in the background.
+          </p>
+        </div>
+
+        <div class="cluster-card">
+          <h3>Biometric wallet authentication</h3>
+          <p class="small">
+            Apple Pay / Google Pay authenticate you with biometrics, then send tokenized card data.
+          </p>
+        </div>
+
+        <div class="cluster-card">
+          <h3>3-D Secure / SCA</h3>
+          <p class="small">
+            Online authentication via app push, biometrics, or SMS-based OTP depending on region & issuer.
+          </p>
+        </div>
+
+        <div class="cluster-card">
+          <h3>Risk-based “frictionless” approvals</h3>
+          <p class="small">
+            No challenge required when issuer models determine the transaction is low-risk.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fees / Risks / Limits -->
+    <section class="section">
+      <h2>Risks, limits &amp; security factors in authentication</h2>
+      <p class="small">
+        Authentication affects approval rates, fraud resistance and user friction. Here are the main trade-offs:
+      </p>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Area</th>
+            <th>Impact</th>
+            <th>What to check</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Fraud risk</td>
+            <td>Weak authentication (e.g. signatures) increases fraud exposure.</td>
+            <td>Prefer chip-and-PIN or wallet biometrics for higher-risk transactions.</td>
+          </tr>
+          <tr>
+            <td>Approval rates</td>
+            <td>Biometrics + SCA can improve approvals by meeting regulation requirements.</td>
+            <td>Ensure your issuer supports modern authentication methods.</td>
+          </tr>
+          <tr>
+            <td>Friction</td>
+            <td>Some methods slow the checkout process.</td>
+            <td>Wallets usually offer the fastest, strongest authentication.</td>
+          </tr>
+          <tr>
+            <td>Limits</td>
+            <td>Contactless low-value limits vary by region and issuer risk rules.</td>
+            <td>Know your tap thresholds; expect occasional “PIN required”.</td>
+          </tr>
+          <tr>
+            <td>Device trust</td>
+            <td>Tokenized wallet transactions depend on device security.</td>
+            <td>Keep OS updated; enable biometrics and device lock.</td>
+          </tr>
+          <tr>
+            <td>Offline acceptance</td>
+            <td>PIN and chip support offline fallback; biometrics do not.</td>
+            <td>Carry a physical card when traveling internationally.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>The authentication & security domain cluster</h2>
+      <p class="small">
+        Sign.creditcard is part of the security-focused microsites in The CreditCard Collection:
+      </p>
+
+      <div class="cluster-grid">
+        <a class="cluster-card"
+           href="https://limit.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=limit">
+          <h3>Limit.Creditcard</h3>
+          <p class="small">Understand approval limits, spending caps and risk triggers.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://verify.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=verify">
+          <h3>Verify.Creditcard</h3>
+          <p class="small">Verification layers across card, device and merchant systems.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://access.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=access">
+          <h3>Access.Creditcard</h3>
+          <p class="small">Card access, controls, permissions and secure usage.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://digitalid.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=digitalid">
+          <h3>DigitalID.Creditcard</h3>
+          <p class="small">Digital identity, tokenization and cardholder verification.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://tech.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=tech">
+          <h3>Tech.Creditcard</h3>
+          <p class="small">The rails, cryptography and logic behind authentication.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://fin.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=fin">
+          <h3>Fin.Creditcard</h3>
+          <p class="small">Overview of The CreditCard Collection.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <h2>Find cards with secure & frictionless authentication</h2>
+      <p class="small">
+        Sign.creditcard explains how authentication shapes the safety and convenience of every card payment.
+        To compare real card products — including security features, wallet compatibility and approval rates —
+        use the independent comparison engine on Choose.Creditcard:
+      </p>
+
+      <a class="cta"
+         href="https://choose.creditcard/?utm_source=sign.creditcard&utm_medium=referral&utm_campaign=sign_bottom">
+        Open Card Comparison on Choose.Creditcard
+      </a>
+    </section>
+
+  </main>
+
+  <!-- MINI FOOTER -->
+  <footer class="mini-footer">
+    <p class="mini-footer-main">
+      © 2025 The CreditCard Collection — ronarn AS
+    </p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+    </p>
+  </footer>
+
+</body>
 </html>
